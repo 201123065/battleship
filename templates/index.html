@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{%block content%}
+<div class="login-panel panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Iniciar Sesion</h3>
+    </div>
+    <div class="panel-body">
+        <form role="form" method='POST'>
+            <fieldset>
+                <div class="form-group">
+                	usuario:{{form.username}}
+                    
+                </div>
+                <div class="form-group">
+                	contasena:{{form.password}}
+                    
+                </div>
+                <button type="submit" class="btn btn-lg btn-success btn-block href='/'">Login</button>
+            </fieldset>
+        </form>
+        <div>
+        o <a href="/crear_usuario">crea un usuario</a>
+        </div>
+    </div>
+    
+</div>
+{{form.username}}
+{%endblock%}
